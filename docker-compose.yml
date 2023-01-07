@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  shiori:
+    image: ghcr.io/go-shiori/shiori:v1.5.3-35-g27c2fc7
+    ports:
+      - 8080:8080
+    environment:
+      SHIORI_DIR: /data/
+    volumes:
+      - ./volume/:/data/
